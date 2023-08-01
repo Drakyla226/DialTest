@@ -1,0 +1,1 @@
+F:/only/Olny/localhost/bitrix/modules/sale/install/components/bitrix/sale.personal.order/templates/.default/bitrix/F:/only/Olny/localhost/bitrix/components/bitrix/sale.personal.order/templates/.default/bitrix/
