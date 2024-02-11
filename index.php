@@ -2,32 +2,13 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Задание");
 ?>
-<form method="get">
-	<label>Запланировать транспорт на время</label>
-	<p>
-		<label>Начало: </label>
-		<input type="datetime-local" name="trip-start" value="<?= date('Y-m-d\TH:i'); ?>" />
-	<p>
-		<label>Конец: </label>
-		<input type="datetime-local" name="trip-end" value="<?= date('Y-m-d\TH:i'); ?>" />
-	<p>
-		<input type="submit" value="Отправить">
-</form>
 
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['trip-start']) && isset($_GET['trip-end'])) {
-	$APPLICATION->IncludeComponent(
-		"demo:task",
-		".default",
-		array(
-			"IBLOCK_ID" => "4",
-			"IBLOCK_TYPE" => "company",
-			"COMPONENT_TEMPLATE" => ".default"
-		),
-		false
-	);
-}
-?>
+<main>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae asperiores corrupti impedit mollitia ab recusandae dicta, commodi magnam facere, voluptates, beatae saepe quasi at! Perspiciatis ratione incidunt unde odio earum.
+    Voluptates, explicabo expedita laboriosam dolorem commodi aperiam atque nostrum. Itaque harum culpa neque maiores architecto consectetur placeat quas, unde, voluptatem ratione, possimus laboriosam? Nostrum atque possimus harum architecto! Repellat, cumque.
+    Temporibus, assumenda sequi fugit reprehenderit repellat ad esse voluptate magni aliquid veniam, quos quidem dolores excepturi, sapiente ex ullam obcaecati aliquam? Rerum, autem ad! Accusantium error fugit officia mollitia tenetur.
+    Deserunt dolorum minima dolore excepturi. Totam laboriosam, laudantium hic dolorem accusantium eaque esse exercitationem repellendus corrupti dolorum quis aliquid quo eveniet magnam inventore, amet nihil molestias blanditiis, placeat voluptatibus modi!
+</main>
 
 <?php
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php");
